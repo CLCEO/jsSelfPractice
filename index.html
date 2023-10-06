@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS with Book</title>
+</head>
+<body>
+     <script src="script.js"></script> 
+<body>
+</html> -->
+
+
+<!-- the html and css syntax for Guru's project for temp purpose:  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calc</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Month" id="month">
+    <input type="text" placeholder="Day" id="day">
+    <input type="text" placeholder="Year" id="year">
+    <br>
+    <input type="text" placeholder="Present Month" id="presentMonth">
+    <input type="text" placeholder="Present Day" id="presentDay">
+    <input type="text" placeholder="Present Year" id="presentYear">
+    <br>
+    <button onclick="calcAge">Calc age</button>
+    <div id="resultSection">
+
+    </div>
+    <button onclick="red()" id="red">P</button>
+    <script>
+        let month = document.getElementById('month').innerText
+        let day = document.getElementById('day').innerText
+        let year = document.getElementById('year').innerText
+
+
+        let presentMonth = document.getElementById('presentMonth').innerText
+        let presentDay = document.getElementById('presentDay').innerText
+        let presentYear = document.getElementById('presentYear').innerText
+
+        let ageInYear = presentYear - year
+        let ageInMonth = presentMonth - month
+        let ageInDay = presentDay - day
+
+        let finalResult = ageInYear + ' years' + ' ' + ageInMonth + ' months' + ' ' + ageInDay + ' days'
+        function calcAge(){
+            document.getElementById('resultSection').innerText = finalResult
+        }
+        function red(){
+            document.getElementById('red')      }
+    </script>
+    
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
